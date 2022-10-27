@@ -1,0 +1,4 @@
+package domain;
+
+class Day {
+}
