@@ -40,7 +40,7 @@ class CitizenService(
         val citizen = citizenRepository.find(citizenId)
         citizen.onRankUp { email.sendCongratulationsMail() }
         citizen.onRankDown { email.sendImSorryMail() }
-        citizen.onCitizenPointsChanged(onCitizenPointsChanged)
+        citizen.onPointsChanged(onCitizenPointsChanged)
         return citizen
     }
 }

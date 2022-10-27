@@ -6,11 +6,11 @@ class Citizen(
     private val promoDayExtraPoints: PromoDayExtraPoints,
 ) : Aggregate() {
     private lateinit var onRankDown: OnRankChanged
-    private lateinit var onPointsChanged: OnPointsChanged
     private lateinit var onRankUp: OnRankChanged
+    private lateinit var onPointsChanged: OnPointsChanged
 
     //region event setters
-    fun onCitizenPointsChanged(event: OnPointsChanged) {
+    fun onPointsChanged(event: OnPointsChanged) {
         onPointsChanged = event
     }
 

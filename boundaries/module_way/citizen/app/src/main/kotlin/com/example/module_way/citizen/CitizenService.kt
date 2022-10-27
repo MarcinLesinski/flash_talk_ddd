@@ -1,33 +1,33 @@
 package com.example.module_way.citizen
 
 
-import com.example.ddd.aggregate.citizen.adapters.toDomain
-import com.example.ddd.aggregate.citizen.adapters.write.CitizenRepository
-import com.example.ddd.aggregate.citizen.adapters.write.MandateFactory
-import com.example.ddd.aggregate.citizen.infrastructure.TimeProvider
+//import com.example.ddd.aggregate.citizen.adapters.toDomain
+//import com.example.ddd.aggregate.citizen.adapters.write.CitizenRepository
+//import com.example.ddd.aggregate.citizen.adapters.write.MandateFactory
+//import com.example.ddd.aggregate.citizen.infrastructure.TimeProvider
 import org.springframework.stereotype.Service
 
 @Service
 internal class CitizenService(
-    private val citizenRepository: CitizenRepository,
-    private val mandateFactory: MandateFactory,
-    private val time: TimeProvider,
+//    private val citizenRepository: CitizenRepository,
+//    private val mandateFactory: MandateFactory,
+//    private val time: TimeProvider,
 ) {
     fun giveMandateToCitizen(citizenId: Long, mandateType: Long, mandateValue: Long) {
-        val citizen = citizenRepository.find(citizenId)
-        val mandate = mandateFactory.construct(mandateType, mandateValue)
-
-        citizen.getA(mandate)
-
-        citizenRepository.save(citizen)
+//        val citizen = citizenRepository.find(citizenId)
+//        val mandate = mandateFactory.construct(mandateType, mandateValue)
+//
+//        citizen.getA(mandate)
+//
+//        citizenRepository.save(citizen)
     }
 
     fun payMandate(citizenId: Long) {
-        val citizen = citizenRepository.find(citizenId)
-
-        citizen.payAMandate(time.day().toDomain())
-
-        citizenRepository.save(citizen)
+//        val citizen = citizenRepository.find(citizenId)
+//
+//        citizen.payAMandate(time.day().toDomain())
+//
+//        citizenRepository.save(citizen)
     }
 }
 

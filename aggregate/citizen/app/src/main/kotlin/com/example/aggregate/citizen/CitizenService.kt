@@ -1,10 +1,10 @@
 package com.example.aggregate.citizen
 
 
-import com.example.ddd.aggregate.citizen.adapters.toDomain
-import com.example.ddd.aggregate.citizen.adapters.write.CitizenRepository
-import com.example.ddd.aggregate.citizen.adapters.write.MandateFactory
-import com.example.ddd.aggregate.citizen.infrastructure.TimeProvider
+import com.example.aggregate.citizen.adapters.toDomain
+import com.example.aggregate.citizen.adapters.write.CitizenRepository
+import com.example.aggregate.citizen.adapters.write.MandateFactory
+import com.example.aggregate.citizen.infrastructure.TimeProvider
 import org.springframework.stereotype.Service
 
 @Service

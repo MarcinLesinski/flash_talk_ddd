@@ -12,4 +12,5 @@ internal class Config {
     fun bindServices(citizenService: CitizenService, townHallService: TownHallService) {
         citizenService.onCitizenPointsChanged(townHallService::updateRanking)
     }
+
 }
